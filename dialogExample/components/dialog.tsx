@@ -25,6 +25,7 @@ const MyComponent = () => {
             <Dialog.Content>
               <Text variant="bodyMedium">This is simple dialog</Text>
             </Dialog.Content>
+
             <Dialog.Actions>
               <Button onPress={hideDialog}>Done</Button>
             </Dialog.Actions>

@@ -1,5 +1,5 @@
 import { Text, View, StyleSheet } from "react-native";
-
+import { PaperProvider } from "react-native";
 export default function Index() {
   return (
     <View style={styles.container}>
