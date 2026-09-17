@@ -1,11 +1,23 @@
-import { Text, View, StyleSheet } from "react-native";
-import { PaperProvider } from "react-native-paper";
-import DialogTitle from "react-native-paper/lib/typescript/components/Dialog/DialogTitle";
+import { useState } from "react";
+import { StyleSheet, Text, View } from "react-native";
+import { Dialog, Portal } from "react-native-paper";
+
+const [visible, setVisible] = useState(false);
+
+const hideDialog = () => setVisible(false);
 export default function Index() {
   return (
     <View style={styles.container}>
-      <Text>This is an example of the title</Text>
-      <DialogTitle />
+      return (
+      <Portal>
+        <Dialog visible={visible} onDismiss={hideDialog}>
+          <Dialog.Title>This is a title</Dialog.Title>
+          <Dialog.Content>
+            <Text>This is simple dialog</Text>
+          </Dialog.Content>
+        </Dialog>
+      </Portal>
+      );
     </View>
   );
 }

@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Dialog, Portal, Text } from "react-native-paper";
 
-const MyComponent = () => {
+const DialogTitle = () => {
   const [visible, setVisible] = React.useState(false);
 
   const hideDialog = () => setVisible(false);
@@ -18,4 +18,4 @@ const MyComponent = () => {
   );
 };
 
-export default MyComponent;
+export default DialogTitle;
