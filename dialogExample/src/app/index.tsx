@@ -7,7 +7,8 @@ export default function Index() {
   return (
     <View style={styles.container}>
       <TouchableOpacity onPress={() => setVisible(!visible)}>
-        {visible && <DialogTitle />}
+        {visible && <DialogTitle />} // is kinda like an if statement, Bryce
+        told me how to do it
         <Text>show Dialog.title</Text>
       </TouchableOpacity>
     </View>
