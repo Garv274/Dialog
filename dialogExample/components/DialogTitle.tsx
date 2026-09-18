@@ -6,7 +6,10 @@ const DialogTitle = () => {
   return (
     <Portal>
       <Dialog visible={visible}>
-        <Dialog.Title>This is a Dialog.title</Dialog.Title>
+        <Dialog.Icon icon="alert" />
+        <Dialog.Title style={{ textAlign: "center" }}>
+          This is a titles
+        </Dialog.Title>
         <Dialog.Content>
           <Text variant="bodyMedium">
             This is an example of the Dialog.Content

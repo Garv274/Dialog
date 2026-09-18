@@ -6,16 +6,10 @@ export default function Index() {
   const [visible, setVisible] = useState(false);
   return (
     <View style={styles.container}>
-<<<<<<< HEAD
-      <Text>This is an example of the title</Text>
-      <DialogTitle>hi</DialogTitle>
-=======
       <TouchableOpacity onPress={() => setVisible(!visible)}>
-        {visible && <DialogTitle />} // is kinda like an if statement, Bryce
-        told me how to do it
+        {visible && <DialogTitle />}
         <Text>show Dialog.title</Text>
       </TouchableOpacity>
->>>>>>> 60f377aa204add5450a5fde67c55b7742ef9625d
     </View>
   );
 }
