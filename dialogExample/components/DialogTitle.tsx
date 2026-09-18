@@ -1,21 +1,25 @@
-import * as React from "react";
-import { Dialog, Portal, Text } from "react-native-paper";
+import { useState } from "react";
+import { Button, Dialog, Portal, Text } from "react-native-paper";
 
-const MyComponent = () => {
-  const [visible, setVisible] = React.useState(false);
-
-  const hideDialog = () => setVisible(false);
-
+const DialogTitle = () => {
+  const [visible, setVisible] = useState(true);
   return (
     <Portal>
-      <Dialog visible={visible} onDismiss={hideDialog}>
-        <Dialog.Title>This is a title</Dialog.Title>
+      <Dialog visible={visible}>
+        <Dialog.Title>This is a Dialog.title</Dialog.Title>
         <Dialog.Content>
-          <Text variant="bodyMedium">This is simple dialog</Text>
+          <Text variant="bodyMedium">
+            This is an example of the Dialog.Content
+          </Text>
         </Dialog.Content>
+        <Dialog.Actions>
+          <Button onPress={() => setVisible(!visible)}>
+            This is a Dialog.Action
+          </Button>
+        </Dialog.Actions>
       </Dialog>
     </Portal>
   );
 };
 
-export default MyComponent;
+export default DialogTitle;
