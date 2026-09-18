@@ -5,7 +5,7 @@ export default function Index() {
   return (
     <View style={styles.container}>
       <Text>This is an example of the title</Text>
-      <DialogTitle />
+      <DialogTitle>hi</DialogTitle>
     </View>
   );
 }
